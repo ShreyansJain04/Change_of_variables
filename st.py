@@ -29,7 +29,7 @@ jacobian_matrix = np.array(jacobian_matrix)
 
 
 st.header("Input Function")
-function_str = st.text_input("Enter the mathematical function (e.g., 'x**2 + y**2'):")
+function_str = st.text_input("Enter the mathematical function (e.g., 'x + y'):")
 
 x, y = symbols('x y')
 user_function = lambdify((x, y), function_str, 'numpy')
